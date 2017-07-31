@@ -23,7 +23,7 @@ describe("####----- TEST ------####", () => {
 
     it("should return getApi", (done) => {
       chai.request(server)
-      .get("/")
+      .get("/api")
       .query({names: "foo"})
       .end((err, res) => {
         // tslint:disable-next-line:no-unused-expression
